@@ -3,7 +3,15 @@ const app=express();
 const port=8000;
 
 const expressLayouts=require("express-ejs-layouts");
+
+// Static folders
+app.use(express.static("./assets"));
+
+// Use Layouts
 app.use(expressLayouts);
+
+app.set("layout extractStyles",true);
+app.set("layout extractScripts",true);
 
 // Set up Router Engine
 app.use('/',require('./routes'));
