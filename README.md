@@ -1,3 +1,3 @@
 # Social-Web-App
-Social Media Web Application (Currently Working on it)
+A simple Social Media Web Application (Currently Working on it)
 
